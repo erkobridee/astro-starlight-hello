@@ -1,0 +1,32 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+
+/*
+    the astro starlight on the deployment server has a redirection rules
+    to redirect to the expected translated 404 page
+
+    https://github.com/withastro/starlight/blob/main/docs/public/_redirects
+*/
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+---
+
+<ViewTransitions fallback="swap" />
+
+<StarlightPage frontmatter={{
+    template: 'splash',
+    title: '404',
+    hero: { title: '', },
+    editUrl: false,
+    pagefind: false,
+    draft: false,
+}}>
+</StarlightPage>
+
+
+<script>
+    const { lang = 'en' } = document.documentElement;
+
+    // https://www.30secondsofcode.org/js/s/modify-url-without-reload/
+    window.history.pushState({ prevUrl: window.location.href }, '', `/${lang.toLocaleLowerCase()}/404`)
+    window.location.assign(`/${lang.toLocaleLowerCase()}/404`);
+</script>
