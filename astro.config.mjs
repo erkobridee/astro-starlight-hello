@@ -18,7 +18,7 @@ export default defineConfig({
 			defaultLocale: 'en',
 
 			locales: {
-				en: { label: ' English' }, 
+				en: { label: ' English' },
 				'pt-br': { label: 'Português', lang: 'pt-BR' }
 			},
 
@@ -37,12 +37,12 @@ export default defineConfig({
 					},
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ 
-							label: 'Example Guide', 
+						{
+							label: 'Example Guide',
 							translations: {
 								'pt-BR': 'Guia de Exemplo'
-							},		
-							slug: 'guides/example' 
+							},
+							slug: 'guides/example'
 						},
 					],
 				},
@@ -54,7 +54,7 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
 			],
-			
+
 			customCss: ['./src/tailwind.css'],
 		}),
 

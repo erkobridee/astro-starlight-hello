@@ -12,21 +12,25 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
 <ViewTransitions fallback="swap" />
 
-<StarlightPage frontmatter={{
+<StarlightPage
+  frontmatter={{
     template: 'splash',
     title: '404',
-    hero: { title: '', },
+    hero: { title: '' },
     editUrl: false,
     pagefind: false,
-    draft: false,
-}}>
-</StarlightPage>
-
+    draft: false
+  }}
+/>
 
 <script>
-    const { lang = 'en' } = document.documentElement;
+  const { lang = 'en' } = document.documentElement;
 
-    // https://www.30secondsofcode.org/js/s/modify-url-without-reload/
-    window.history.pushState({ prevUrl: window.location.href }, '', `/${lang.toLocaleLowerCase()}/404`)
-    window.location.assign(`/${lang.toLocaleLowerCase()}/404`);
+  // https://www.30secondsofcode.org/js/s/modify-url-without-reload/
+  window.history.pushState(
+    { prevUrl: window.location.href },
+    '',
+    `/${lang.toLocaleLowerCase()}/404`
+  );
+  window.location.assign(`/${lang.toLocaleLowerCase()}/404`);
 </script>
