@@ -55,6 +55,10 @@ export default defineConfig({
 			],
 
 			customCss: ['./src/tailwind.css'],
+
+      components: {
+        LanguageSelect: './src/components/starlight-overrides/LanguageSelect.astro'
+      }
 		}),
 
 		tailwind({ applyBaseStyles: false }),

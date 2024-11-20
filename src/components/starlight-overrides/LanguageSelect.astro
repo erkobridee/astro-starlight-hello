@@ -1,0 +1,22 @@
+---
+import config from 'virtual:starlight/user-config';
+
+import type { Props } from '@astrojs/starlight/props';
+
+import Default from '@astrojs/starlight/components/LanguageSelect.astro';
+
+//---//
+
+const { locales } = config;
+
+const supportedLocales = Object.keys(locales as Record<string, unknown>);
+
+const slugToIgnore = [
+  '404',
+  ...supportedLocales.map((locale) => `${locale}/404`)
+];
+
+const shouldRender = !slugToIgnore.includes(Astro.props.slug);
+---
+
+{shouldRender && <Default {...Astro.props} />}
