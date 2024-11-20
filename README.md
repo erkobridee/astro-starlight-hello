@@ -15,10 +15,12 @@ All commands are run from the root of the project, from a terminal:
 | Command                   | Action                                                                                  |
 | :------------------------ | :-------------------------------------------------------------------------------------- |
 | `npm install`             | Installs dependencies                                                                   |
+| `npm start`               | Starts local dev server at `localhost:4321`                                             |
 | `npm run dev`             | Starts local dev server at `localhost:4321`                                             |
+| `npm run sync`            | Run the CLI command `astro sync` that generates TypeScript types for all Astro modules. |
 | `npm run build`           | Build your production site to `./dist/`                                                 |
 | `npm run preview`         | Preview your build locally, before deploying                                            |
-| `npm run sync`            | Run the CLI command `astro sync` that generates TypeScript types for all Astro modules. |
+| `npm run build-n-preview` | Build the production site and run the preview                                           |
 | `npm run lint`            | Run the `prettier` and `eslint`                                                         |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`                                        |
 | `npm run astro -- --help` | Get help using the Astro CLI                                                            |
@@ -26,3 +28,21 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+
+## References
+
+- [Internationalization (i18n) | Guides - Starlight](https://starlight.astro.build/guides/i18n/)
+
+- [Authoring Content in Markdown | Guides - Starlight](https://starlight.astro.build/guides/authoring-content/)
+
+- [Custom 404 page - Customizing Starlight | Guides - Starlight](https://starlight.astro.build/guides/customization/#custom-404-page)
+
+### Override Starlight Components
+
+- [Overriding Components | Guides - Starlight](https://starlight.astro.build/guides/overriding-components/)
+
+- [Overrides Reference | Reference - Starlight](https://starlight.astro.build/reference/overrides/)
+
+#### Example
+
+- [[GitHub] kinde-oss/documentation](https://github.com/kinde-oss/documentation)
