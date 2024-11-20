@@ -6,15 +6,16 @@
     "unset:git-hooks-path": "git config --unset core.hooksPath",
     "simple-git-hooks": "npx simple-git-hooks",
     "postinstall": "is-ci || npm run simple-git-hooks",
+    "prettier": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,json,astro}\"",
+    "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "lint": "run-s prettier eslint",
     "start": "run-s dev",
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
+    "build-n-preview": "run-s build preview",
     "astro": "astro",
-    "sync": "astro sync",
-    "prettier": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,json,astro}\"",
-    "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
-    "lint": "run-s prettier eslint"
+    "sync": "astro sync"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
