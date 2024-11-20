@@ -6,7 +6,6 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 // https://starlight.astro.build/guides/i18n/
 export default defineConfig({
-
 	redirects: {
 		'/': '/en'
 	},

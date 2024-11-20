@@ -1,36 +1,55 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
+import config from 'virtual:starlight/user-config';
 
 /*
     the astro starlight on the deployment server has a redirection rules
     to redirect to the expected translated 404 page
 
     https://github.com/withastro/starlight/blob/main/docs/public/_redirects
+
+    https://docs.astro.build/en/reference/directives-reference/#definevars
 */
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
----
 
-<ViewTransitions fallback="swap" />
+const { locales } = config;
+
+const supportedLocales = Object.keys(locales as Record<string, unknown>);
+---
 
 <StarlightPage
   frontmatter={{
     template: 'splash',
     title: '404',
-    hero: { title: '' },
-    editUrl: false,
-    pagefind: false,
-    draft: false
+    hero: { title: '' }
   }}
 />
 
-<script>
+<script is:inline define:vars={{ supportedLocales }}>
   const { lang = 'en' } = document.documentElement;
+  const prevUrl = window.location.href;
+
+  let langUrl = lang.toLocaleLowerCase();
+  if (supportedLocales.length > 0) {
+    for (let locale of supportedLocales) {
+      if (prevUrl.includes(locale)) {
+        langUrl = locale;
+        break;
+      }
+    }
+  }
+
+  // TODO: it should also consider the site domain and base url
+  const error404Url = `/${langUrl}/404`;
 
   // https://www.30secondsofcode.org/js/s/modify-url-without-reload/
   window.history.pushState(
-    { prevUrl: window.location.href },
+    {
+      prevUrl,
+      supportedLocales
+    },
     '',
-    `/${lang.toLocaleLowerCase()}/404`
+    error404Url
   );
-  window.location.assign(`/${lang.toLocaleLowerCase()}/404`);
+
+  window.location.assign(error404Url);
 </script>
