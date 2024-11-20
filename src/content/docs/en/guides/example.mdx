@@ -3,8 +3,13 @@ title: Example Guide
 description: A guide in my new Starlight docs site.
 ---
 
+import { Image } from 'astro:assets';
+import gearSvgImage from '~/assets/docs/gear.svg';
+
 Guides lead a user through a specific task they want to accomplish, often with a sequence of steps.
 Writing a good guide requires thinking about what your users are trying to do.
+
+<Image src={gearSvgImage} alt="gear image" width={200} />
 
 ## Further reading
 
