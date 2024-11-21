@@ -43,6 +43,8 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 - [Overrides Reference | Reference - Starlight](https://starlight.astro.build/reference/overrides/)
 
-#### Example
+### Examples of customizations
 
 - [[GitHub] kinde-oss/documentation](https://github.com/kinde-oss/documentation)
+
+- [[GitHub] mearashadowfax/ScrewFast](https://github.com/mearashadowfax/ScrewFast) - Open-source Astro website template with sleek, customizable TailwindCSS components. [ Interesting case: site, blog and documentation ]
