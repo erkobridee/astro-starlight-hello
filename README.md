@@ -37,6 +37,11 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 - [Custom 404 page - Customizing Starlight | Guides - Starlight](https://starlight.astro.build/guides/customization/#custom-404-page)
 
+- [Custom fonts - Customizing Starlight | Guides - Starlight](https://starlight.astro.build/guides/customization/#custom-fonts)
+
+  - [Poppins | Fontsource](https://fontsource.org/fonts/poppins)
+  - [Poppins | Google Fonts](https://fonts.google.com/specimen/Poppins)
+
 ### Override Starlight Components
 
 - [Overriding Components | Guides - Starlight](https://starlight.astro.build/guides/overriding-components/)

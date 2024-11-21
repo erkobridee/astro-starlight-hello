@@ -6,6 +6,10 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+      fontFamily: {
+        sans: 'Poppins, sans-serif',
+        serif: 'serif'
+      },
 			colors: {
 				// Your preferred accent color. Indigo is closest to Starlight’s defaults.
 				accent: colors.indigo,
