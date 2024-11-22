@@ -45,11 +45,11 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 - [CSS & Styling | Guides - Starlight](https://starlight.astro.build/guides/css-and-tailwind/#color-theme-editor)
 
-- Contrast level: `AAA`
+  - Contrast level: `AAA`
 
-- Accent [ Hue: `149`, Chroma: `0.27` ]
+  - Accent [ Hue: `149`, Chroma: `0.27` ]
 
-- Gray [ Hue: `149`, Chroma: `0.1` ]
+  - Gray [ Hue: `149`, Chroma: `0.1` ]
 
 ### Override Starlight Components
 
