@@ -47,9 +47,9 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
   - Contrast level: `AAA`
 
-  - Accent [ Hue: `149`, Chroma: `0.27` ]
+  - Accent [ Hue: `139`, Chroma: `0.27` ]
 
-  - Gray [ Hue: `149`, Chroma: `0.1` ]
+  - Gray [ Hue: `139`, Chroma: `0.1` ]
 
 ### Override Starlight Components
 

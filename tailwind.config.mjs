@@ -3,20 +3,19 @@ import starlightPlugin from '@astrojs/starlight-tailwind';
 // Generated color palettes
 // https://starlight.astro.build/guides/css-and-tailwind/#color-theme-editor
 const accent = {
-  200: '#a0d9a9',
-  600: '#005722',
-  900: '#003e16',
-  950: '#002d0e'
+  200: '#abd79f',
+  600: '#1c5800',
+  900: '#113d00',
+  950: '#0a2c00'
 };
-
 const gray = {
-  100: '#f5f7f5',
+  100: '#f5f6f5',
   200: '#eceeec',
   300: '#c0c3c0',
-  400: '#878d88',
-  500: '#545a55',
-  700: '#353a35',
-  800: '#242824',
+  400: '#888d87',
+  500: '#555954',
+  700: '#363935',
+  800: '#242823',
   900: '#171917'
 };
 
