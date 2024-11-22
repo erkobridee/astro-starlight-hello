@@ -40,7 +40,16 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 - [Custom fonts - Customizing Starlight | Guides - Starlight](https://starlight.astro.build/guides/customization/#custom-fonts)
 
   - [Poppins | Fontsource](https://fontsource.org/fonts/poppins)
+
   - [Poppins | Google Fonts](https://fonts.google.com/specimen/Poppins)
+
+- [CSS & Styling | Guides - Starlight](https://starlight.astro.build/guides/css-and-tailwind/#color-theme-editor)
+
+- Contrast level: `AAA`
+
+- Accent [ Hue: `149`, Chroma: `0.27` ]
+
+- Gray [ Hue: `149`, Chroma: `0.1` ]
 
 ### Override Starlight Components
 

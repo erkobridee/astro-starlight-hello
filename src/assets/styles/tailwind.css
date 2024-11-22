@@ -6,3 +6,22 @@
 Add additional Tailwind styles to this file, for example with @layer:
 https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
 */
+
+@layer base {
+  :root {
+    --custom-outline-color: theme(colors.accent.200);
+
+    :focus-visible {
+      outline-color: var(--custom-outline-color);
+      outline-with: 1px;
+    }
+
+    .pagination-links a:hover {
+      border-color: var(--custom-outline-color);
+    }
+  }
+
+  :root[data-theme='light'] {
+    --custom-outline-color: theme(colors.accent.600);
+  }
+}
