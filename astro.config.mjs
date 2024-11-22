@@ -7,60 +7,61 @@ import tailwind from '@astrojs/tailwind';
 // https://starlight.astro.build/guides/i18n/
 // https://starlight.astro.build/reference/configuration/
 export default defineConfig({
-	redirects: {
-		'/': '/en'
-	},
+  redirects: {
+    '/': '/en'
+  },
 
-	integrations: [
-		starlight({
-			disable404Route: true,
+  integrations: [
+    starlight({
+      disable404Route: true,
 
-			defaultLocale: 'en',
+      defaultLocale: 'en',
 
-			locales: {
-				en: { label: ' English' },
-				'pt-br': { label: 'Português', lang: 'pt-BR' }
-			},
+      locales: {
+        en: { label: ' English' },
+        'pt-br': { label: 'Português', lang: 'pt-BR' }
+      },
 
-			title: {
-				en: 'Docs with Tailwind',
-				'pt-BR': 'Docs com Tailwind'
-			},
+      title: {
+        en: 'Docs with Tailwind',
+        'pt-BR': 'Docs com Tailwind'
+      },
 
-			// https://starlight.astro.build/guides/sidebar/#internationalization
-			sidebar: [
-				{
-					label: 'Guides',
-					translations: {
-						'pt-BR': 'Guias'
-					},
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{
-							label: 'Example Guide',
-							translations: {
-								'pt-BR': 'Guia de Exemplo'
-							},
-							slug: 'guides/example'
-						},
-					],
-				},
-				{
-					label: 'Reference',
-					translations: {
-						'pt-BR': 'Referências'
-					},
-					autogenerate: { directory: 'reference' },
-				},
-			],
+      // https://starlight.astro.build/guides/sidebar/#internationalization
+      sidebar: [
+        {
+          label: 'Guides',
+          translations: {
+            'pt-BR': 'Guias'
+          },
+          items: [
+            // Each item here is one entry in the navigation menu.
+            {
+              label: 'Example Guide',
+              translations: {
+                'pt-BR': 'Guia de Exemplo'
+              },
+              slug: 'guides/example'
+            }
+          ]
+        },
+        {
+          label: 'Reference',
+          translations: {
+            'pt-BR': 'Referências'
+          },
+          autogenerate: { directory: 'reference' }
+        }
+      ],
 
-			customCss: [
+      customCss: [
         './src/assets/styles/tailwind.css',
         './src/assets/styles/custom.css'
       ],
 
       components: {
-        LanguageSelect: './src/components/starlight-overrides/LanguageSelect.astro'
+        LanguageSelect:
+          './src/components/starlight-overrides/LanguageSelect.astro'
       },
 
       // https://starlight.astro.build/reference/configuration/#social
@@ -94,8 +95,8 @@ export default defineConfig({
           }
         }
       ]
-		}),
+    }),
 
-		tailwind({ applyBaseStyles: false }),
-	],
+    tailwind({ applyBaseStyles: false })
+  ]
 });
