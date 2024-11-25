@@ -79,7 +79,8 @@ const baseConfig = {
       components: {
         LanguageSelect:
           './src/components/astro/starlight-overrides/LanguageSelect.astro',
-        Hero: './src/components/astro/starlight-overrides/Hero.astro'
+        Hero: './src/components/astro/starlight-overrides/Hero.astro',
+        Pagination: './src/components/astro/starlight-overrides/Pagination.astro'
       },
 
       // https://starlight.astro.build/reference/configuration/#social
