@@ -11,6 +11,8 @@ import config from 'virtual:starlight/user-config';
 */
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
+import Redirect404Translation from '~/components/svelte/Redirect404Translation.svelte';
+
 const { locales } = config;
 
 const supportedLocales = Object.keys(locales as Record<string, unknown>);
@@ -24,32 +26,4 @@ const supportedLocales = Object.keys(locales as Record<string, unknown>);
   }}
 />
 
-<script is:inline define:vars={{ supportedLocales }}>
-  const { lang = 'en' } = document.documentElement;
-  const prevUrl = window.location.href;
-
-  let langUrl = lang.toLocaleLowerCase();
-  if (supportedLocales.length > 0) {
-    for (let locale of supportedLocales) {
-      if (prevUrl.includes(locale)) {
-        langUrl = locale;
-        break;
-      }
-    }
-  }
-
-  // TODO: it should also consider the site domain and base url
-  const error404Url = `/${langUrl}/404`;
-
-  // https://www.30secondsofcode.org/js/s/modify-url-without-reload/
-  window.history.pushState(
-    {
-      prevUrl,
-      supportedLocales
-    },
-    '',
-    error404Url
-  );
-
-  window.location.assign(error404Url);
-</script>
+<Redirect404Translation client:load {supportedLocales} />

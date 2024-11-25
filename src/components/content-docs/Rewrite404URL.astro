@@ -1,9 +1,12 @@
 <script>
-  // https://www.30secondsofcode.org/js/s/modify-url-without-reload/
-  if (window.history && window.history.state) {
-    const { prevUrl } = window.history.state;
+  const dataStr = localStorage.getItem('redirect-404');
+
+  if (dataStr) {
+    const { prevUrl } = JSON.parse(dataStr);
     if (prevUrl) {
+      // https://www.30secondsofcode.org/js/s/modify-url-without-reload/
       window.history.replaceState({}, '', prevUrl);
     }
+    localStorage.removeItem('redirect-404');
   }
 </script>

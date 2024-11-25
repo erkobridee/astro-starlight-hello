@@ -1,17 +1,32 @@
 // @ts-check
+// import type { AstroUserConfig } from ' astro/config';
+
 import { defineConfig } from 'astro/config';
+import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
+
+//---//
+
+import packageJSON from './package.json' assert { type: 'json' };
+
+const { name, github_pages } = packageJSON;
+const isGitHubPagesBuild = !!process.env.GITHUB_PAGES;
+const isGitHubPagesPreview = !!process.env.GITHUB_PAGES_PREVIEW;
+
+//---//
 
 // https://astro.build/config
 // https://starlight.astro.build/guides/i18n/
 // https://starlight.astro.build/reference/configuration/
-export default defineConfig({
+const baseConfig = {
   redirects: {
     '/': '/en'
   },
 
   integrations: [
+    svelte({ extensions: ['.svelte'] }),
+
     starlight({
       disable404Route: true,
 
@@ -61,7 +76,8 @@ export default defineConfig({
 
       components: {
         LanguageSelect:
-          './src/components/starlight-overrides/LanguageSelect.astro'
+          './src/components/starlight-overrides/LanguageSelect.astro',
+        Hero: './src/components/starlight-overrides/Hero.astro'
       },
 
       // https://starlight.astro.build/reference/configuration/#social
@@ -99,4 +115,20 @@ export default defineConfig({
 
     tailwind({ applyBaseStyles: false })
   ]
-});
+};
+
+//---//
+
+const base = `/${name}`;
+
+export default defineConfig(isGitHubPagesBuild
+  ? {
+      ...baseConfig,
+      site: isGitHubPagesPreview ? undefined : github_pages,
+      base,
+      // trailingSlash: 'always',
+      redirects: {
+        '/': base + '/en'
+      }
+    }
+  : baseConfig);
