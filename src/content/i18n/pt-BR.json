@@ -40,5 +40,22 @@
   "pagefind.one_result": "[COUNT] resultados de [SEARCH_TERM]",
   "pagefind.alt_search": "Nenhum resultado de [SEARCH_TERM]. Mostrando resultados de [DIFFERENT_TERM]",
   "pagefind.search_suggestion": "Nenhum resultado de [SEARCH_TERM]. Tente um as pesquisas a seguir:",
-  "pagefind.searching": "Procurando [SEARCH_TERM]..."
+  "pagefind.searching": "Procurando [SEARCH_TERM]...",
+
+  "starlightBlog.authors.count_one": "{{count}} postagem de {{author}}",
+  "starlightBlog.authors.count_other": "{{count}} postagens de {{author}}",
+  "starlightBlog.pagination.prev": "Postagens novas",
+  "starlightBlog.pagination.next": "Postagens antigas",
+  "starlightBlog.post.lastUpdate": " - Última atualização: {{date}}",
+  "starlightBlog.post.draft": "Rascunho",
+  "starlightBlog.post.featured": "Destaque",
+  "starlightBlog.post.tags": "Tags:",
+  "starlightBlog.sidebar.all": "Todas as postagens",
+  "starlightBlog.sidebar.featured": "Postagens em destaque",
+  "starlightBlog.sidebar.recent": "Postagens recentes",
+  "starlightBlog.sidebar.tags": "Tags",
+  "starlightBlog.sidebar.authors": "Autores",
+  "starlightBlog.sidebar.rss": "RSS",
+  "starlightBlog.tags.count_one": "{{count}} postagem com a tag “{{tag}}”",
+  "starlightBlog.tags.count_other": "{{count}} postagens com a tag “{{tag}}”"
 }
