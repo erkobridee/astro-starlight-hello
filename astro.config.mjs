@@ -37,10 +37,13 @@ const baseConfig = {
         'pt-br': { label: 'Português', lang: 'pt-BR' }
       },
 
+      /*
       title: {
         en: 'Docs with Tailwind',
         'pt-BR': 'Docs com Tailwind'
       },
+      */
+      title: 'Astro Starlight Tailwind',
 
       // https://starlight.astro.build/guides/sidebar/#internationalization
       sidebar: [
