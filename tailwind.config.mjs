@@ -1,10 +1,16 @@
 import starlightPlugin from '@astrojs/starlight-tailwind';
 
+// useful tools to generate colors palettes
+// https://www.tailwindcolorpalette.com/
+
 // Generated color palettes
 // https://starlight.astro.build/guides/css-and-tailwind/#color-theme-editor
 const accent = {
   200: '#abd79f',
+  500: '#37AD00',
   600: '#1c5800',
+  700: '#174700',
+  800: '#103300',
   900: '#113d00',
   950: '#0a2c00'
 };
