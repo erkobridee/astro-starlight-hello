@@ -71,7 +71,6 @@ const baseConfig = {
 
       customCss: [
         './src/assets/styles/tailwind.css'
-        // './src/assets/styles/custom.css'
       ],
 
       components: {
