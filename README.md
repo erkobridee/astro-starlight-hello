@@ -31,6 +31,8 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 ## References
 
+- [@astrojs/svelte | Astro Docs](https://docs.astro.build/en/guides/integrations-guide/svelte/)
+
 - [Internationalization (i18n) | Guides - Starlight](https://starlight.astro.build/guides/i18n/)
 
 - [Authoring Content in Markdown | Guides - Starlight](https://starlight.astro.build/guides/authoring-content/)
