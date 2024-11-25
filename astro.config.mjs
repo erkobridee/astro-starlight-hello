@@ -82,7 +82,7 @@ const baseConfig = {
 
       // https://starlight.astro.build/reference/configuration/#social
       social: {
-        github: 'https://github.com/erkobridee'
+        github: 'https://github.com/erkobridee/astro-starlight-hello'
       },
 
       // https://starlight.astro.build/reference/configuration/#head
