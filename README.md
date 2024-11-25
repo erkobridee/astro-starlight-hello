@@ -53,6 +53,8 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
   - Gray [ Hue: `139`, Chroma: `0.1` ]
 
+  - base color: `#1c5800`
+
 - code logic to load the documents from `src/content/docs` : [Starlight repo - packages/starlight/utils/routing.ts](https://github.com/withastro/starlight/blob/6f3202b3eb747de8a1cfcba001ab618d5fdee44a/packages/starlight/utils/routing.ts)
 
 ### Override Starlight Components
