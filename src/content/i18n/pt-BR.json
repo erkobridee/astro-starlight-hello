@@ -27,9 +27,13 @@
   "fileTree.directory": "Diretório",
   "builtWithStarlight.label": "Construido com Starlight",
 
+  "expressiveCode.copyButtonCopied": "Copiado!",
+  "expressiveCode.copyButtonTooltip": "Copiar no clipboard",
+  "expressiveCode.terminalWindowFallbackTitle": "Terminal",
+
   "pagefind.clear_search": "Limpar",
   "pagefind.load_more": "Ver mais",
-  "pagefind.search_label": "Procurar neste site",
+  "pagefind.search_label": "Pesquisar",
   "pagefind.filters_label": "Filtros",
   "pagefind.zero_results": "Nenhum resultado de [SEARCH_TERM]",
   "pagefind.many_results": "[COUNT] resultados de [SEARCH_TERM]",
