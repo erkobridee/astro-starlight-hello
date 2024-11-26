@@ -6,8 +6,8 @@
     "unset:git-hooks-path": "git config --unset core.hooksPath",
     "simple-git-hooks": "npx simple-git-hooks",
     "postinstall": "is-ci || npm run simple-git-hooks",
-    "prettier": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,json,astro}\"",
-    "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "prettier": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,json,astro,svelte}\"",
+    "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro,svelte}\"",
     "lint": "run-s prettier eslint",
     "start": "run-s dev",
     "dev": "astro dev",
@@ -32,24 +32,27 @@
     "typescript": "^5.7.2"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.15.0",
-    "@typescript-eslint/parser": "^8.15.0",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
     "cross-env": "^7.0.3",
     "eslint": "^9.15.0",
     "eslint-plugin-astro": "^1.3.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-svelte": "^2.46.0",
+    "globals": "^15.12.0",
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.10",
     "npm-run-all2": "^7.0.1",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-svelte": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "simple-git-hooks": "^2.11.1",
     "starlight-blog": "^0.15.0"
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx,md,mdx,json,astro}": "prettier --write",
-    "src/**/*.{js,ts,jsx,tsx,astro}": "eslint --fix"
+    "**/*.{js,jsx,ts,tsx,md,mdx,json,astro,svelte}": "prettier --write",
+    "src/**/*.{js,ts,jsx,tsx,astro,svelte}": "eslint --fix"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"

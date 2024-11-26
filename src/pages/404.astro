@@ -24,6 +24,6 @@ const supportedLocales = Object.keys(locales as Record<string, unknown>);
     title: '404',
     hero: { title: '' }
   }}
-/>
-
-<Redirect404Translation client:load {supportedLocales} />
+>
+  <Redirect404Translation client:load {supportedLocales} />
+</StarlightPage>
