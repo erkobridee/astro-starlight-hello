@@ -12,18 +12,18 @@ npm create astro@latest -- --template starlight/tailwind
 
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                                                                  |
-| :------------------------ | :-------------------------------------------------------------------------------------- |
-| `npm install`             | Installs dependencies                                                                   |
-| `npm start`               | Starts local dev server at `localhost:4321`                                             |
-| `npm run dev`             | Starts local dev server at `localhost:4321`                                             |
-| `npm run sync`            | Run the CLI command `astro sync` that generates TypeScript types for all Astro modules. |
-| `npm run build`           | Build your production site to `./dist/`                                                 |
-| `npm run preview`         | Preview your build locally, before deploying                                            |
-| `npm run build-n-preview` | Build the production site and run the preview                                           |
-| `npm run lint`            | Run the `prettier` and `eslint`                                                         |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`                                        |
-| `npm run astro -- --help` | Get help using the Astro CLI                                                            |
+| Command                   | Action                                                                                                        |
+| :------------------------ | :------------------------------------------------------------------------------------------------------------ |
+| `npm install`             | Installs dependencies                                                                                         |
+| `npm start`               | Runs `npm run dev` script                                                                                     |
+| `npm run dev`             | Starts local dev server at `localhost:4321` and also starts the tina.io at `localhost:4321/tinaio/index.html` |
+| `npm run sync`            | Run the CLI command `astro sync` that generates TypeScript types for all Astro modules.                       |
+| `npm run build`           | Build your production site to `./dist/`                                                                       |
+| `npm run preview`         | Preview your build locally, before deploying                                                                  |
+| `npm run build-n-preview` | Build the production site and run the preview                                                                 |
+| `npm run lint`            | Run the `prettier` and `eslint`                                                                               |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`                                                              |
+| `npm run astro -- --help` | Get help using the Astro CLI                                                                                  |
 
 ## 👀 Want to learn more?
 

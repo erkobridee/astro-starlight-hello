@@ -10,7 +10,7 @@
     "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro,svelte}\"",
     "lint": "run-s prettier eslint",
     "start": "run-s dev",
-    "dev": "astro dev",
+    "dev": "tinacms dev -c \"astro dev\"",
     "build": "astro check && astro build",
     "preview": "astro preview",
     "build-n-preview": "run-s build preview",
@@ -29,6 +29,8 @@
     "@astrojs/starlight-tailwind": "^2.0.3",
     "@astrojs/svelte": "^6.0.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@tinacms/cli": "^1.6.12",
+    "@types/node": "^22.10.0",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
     "cross-env": "^7.0.3",
@@ -48,6 +50,7 @@
     "simple-git-hooks": "^2.11.1",
     "starlight-blog": "^0.15.0",
     "tailwindcss": "^3.4.15",
+    "tinacms": "^2.5.0",
     "typescript": "^5.7.2"
   },
   "lint-staged": {
