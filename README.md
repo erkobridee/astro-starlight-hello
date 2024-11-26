@@ -82,3 +82,11 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
   - [[GitHub] wasp-lang/open-saas/opensaas-sh/blog](https://github.com/wasp-lang/open-saas/tree/main/opensaas-sh/blog)
 
 - [[GitHub] rebecamurillo/astro-blog-i18n-starter](https://github.com/rebecamurillo/astro-blog-i18n-starter) - Astro built starter project for a static website and blog witth multilingual i18n configuration.
+
+### Tina.io
+
+> [Tina](https://tina.io) is an [open-source](https://github.com/tinacms/tinacms), Git-backed headless content management system (CMS) that empowers both developers and content creators to collaborate seamlessly on a single platform. Tina enables developers to craft a custom visual editing experience perfectly tailored to their website or application while supporting a broad range of content types such as Markdown, MDX, and JSON.
+
+- [Astro + Tina Setup Guide | Tina Docs](https://tina.io/docs/frameworks/astro)
+
+- [Tina CMS & Astro | Astro Docs](https://docs.astro.build/en/guides/cms/tina-cms/)
