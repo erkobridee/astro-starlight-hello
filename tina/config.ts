@@ -19,19 +19,43 @@ export default defineConfig({
     outputFolder: 'tinaio',
     publicFolder: 'public'
   },
+
   media: {
     tina: {
       mediaRoot: '',
       publicFolder: 'public'
     }
   },
+
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
     collections: [
       {
-        name: 'post',
-        label: 'Posts',
+        name: 'tinapost',
+        label: 'Tina Posts',
         path: 'content/posts',
+        fields: [
+          {
+            type: 'string',
+            name: 'title',
+            label: 'Title',
+            isTitle: true,
+            required: true
+          },
+          {
+            type: 'rich-text',
+            name: 'body',
+            label: 'Body',
+            isBody: true
+          }
+        ]
+      },
+
+      {
+        name: 'docs',
+        label: 'Astro Content Docs',
+        path: 'src/content/docs',
+        format: 'mdx',
         fields: [
           {
             type: 'string',
