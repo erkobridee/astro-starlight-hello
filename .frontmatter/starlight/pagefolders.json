@@ -1,0 +1,37 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Root",
+      "path": "[[workspace]]/src/content/docs",
+      "excludeSubdir": true,
+      "filePrefix": "",
+      "defaultLocale": "en",
+      "previewPath": "/{{locale}}",
+      "locales": [
+        {
+          "title": "English",
+          "locale": "en",
+          "path": "en"
+        },
+        {
+          "title": "Portuguese",
+          "locale": "pt-br",
+          "path": "pt-br"
+        }
+      ]
+    },
+
+    {
+      "title": "References EN",
+      "path": "[[workspace]]/src/content/docs/en/reference",
+      "previewPath": "/en/reference"
+    },
+
+    {
+      "title": "References pt-BR",
+      "path": "[[workspace]]/src/content/docs/pt-br/reference",
+      "previewPath": "/pt-br/reference"
+    }
+  ]
+}

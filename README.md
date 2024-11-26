@@ -82,3 +82,13 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
   - [[GitHub] wasp-lang/open-saas/opensaas-sh/blog](https://github.com/wasp-lang/open-saas/tree/main/opensaas-sh/blog)
 
 - [[GitHub] rebecamurillo/astro-blog-i18n-starter](https://github.com/rebecamurillo/astro-blog-i18n-starter) - Astro built starter project for a static website and blog witth multilingual i18n configuration.
+
+### VS Code - Front Matter CMS
+
+- [Front Matter CMS & Astro | Astro Docs](https://docs.astro.build/en/guides/cms/frontmatter-cms/)
+
+- [Headless CMS right in your code editor | Front Matter](https://frontmatter.codes/)
+
+  - [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=eliostruyf.vscode-front-matter)
+
+  - [Multilingual | Front Matter Docs](https://frontmatter.codes/docs/content-creation/multilingual)
