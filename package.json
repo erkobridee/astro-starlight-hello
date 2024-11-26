@@ -21,14 +21,21 @@
   },
   "dependencies": {
     "astro": "^4.16.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "svelte": "^5.2.8"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^3.6.3",
     "@astrojs/starlight": "^0.29.0",
     "@astrojs/starlight-tailwind": "^2.0.3",
     "@astrojs/svelte": "^6.0.2",
     "@astrojs/tailwind": "^5.1.0",
+    "@keystatic/astro": "^5.0.3",
+    "@keystatic/core": "^0.5.41",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^8.16.0",
     "@typescript-eslint/parser": "^8.16.0",
     "cross-env": "^7.0.3",

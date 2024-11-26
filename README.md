@@ -15,8 +15,8 @@ All commands are run from the root of the project, from a terminal:
 | Command                   | Action                                                                                  |
 | :------------------------ | :-------------------------------------------------------------------------------------- |
 | `npm install`             | Installs dependencies                                                                   |
-| `npm start`               | Starts local dev server at `localhost:4321`                                             |
-| `npm run dev`             | Starts local dev server at `localhost:4321`                                             |
+| `npm start`               | Runs `npm run dev`                                                                      |
+| `npm run dev`             | Starts local dev server at `localhost:4321` content edit UI `localhost:4321/keystatic`  |
 | `npm run sync`            | Run the CLI command `astro sync` that generates TypeScript types for all Astro modules. |
 | `npm run build`           | Build your production site to `./dist/`                                                 |
 | `npm run preview`         | Preview your build locally, before deploying                                            |
@@ -82,3 +82,23 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
   - [[GitHub] wasp-lang/open-saas/opensaas-sh/blog](https://github.com/wasp-lang/open-saas/tree/main/opensaas-sh/blog)
 
 - [[GitHub] rebecamurillo/astro-blog-i18n-starter](https://github.com/rebecamurillo/astro-blog-i18n-starter) - Astro built starter project for a static website and blog witth multilingual i18n configuration.
+
+### Keystatic
+
+> A tool that makes Markdown, JSON and YAML content in your codebase editable by humans. Live edit content on GitHub or your local file system, without disrupting your existing code and workflows.
+
+- [Keystatic](https://keystatic.com/)
+
+- [MDX field - Docs | Keystatic](https://keystatic.com/docs/fields/mdx)
+
+  - [MDX limitations in Keystatic](https://keystatic.com/docs/fields/mdx#mdx-limitations-in-keystatic)
+
+- [Adding Keystatic to an Astro project - Docs | Keystatic](https://keystatic.com/docs/installation-astro)
+
+- [Keystatic & Astro | Docs](https://docs.astro.build/en/guides/cms/keystatic/)
+
+- [Astro: Disable Admin UI Routes in Production - Docs | Keystatic](https://keystatic.com/docs/recipes/astro-disable-admin-ui-in-production)
+
+- [[GitHub] simonswiss/keystatic-astro-mdx](https://github.com/simonswiss/keystatic-astro-mdx)
+
+- [[GitHub] simonswiss/simonswiss.com](https://github.com/simonswiss/simonswiss.com)

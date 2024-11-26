@@ -1,11 +1,13 @@
-// @ts-check
-// import type { AstroUserConfig } from ' astro/config';
-
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
-import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
-import starlightBlog from 'starlight-blog'
+import starlight from '@astrojs/starlight';
+import starlightBlog from 'starlight-blog';
+
+//---//
+
+import react from '@astrojs/react';
+import keystatic from '@keystatic/astro';
 
 //---//
 
@@ -20,7 +22,7 @@ const isGitHubPagesPreview = !!process.env.GITHUB_PAGES_PREVIEW;
 // https://astro.build/config
 // https://starlight.astro.build/guides/i18n/
 // https://starlight.astro.build/reference/configuration/
-const baseConfig = {
+let config = {
   redirects: {
     '/': '/en'
   },
@@ -73,15 +75,14 @@ const baseConfig = {
         }
       ],
 
-      customCss: [
-        './src/assets/styles/tailwind.css'
-      ],
+      customCss: ['./src/assets/styles/tailwind.css'],
 
       components: {
         LanguageSelect:
           './src/components/astro/starlight-overrides/LanguageSelect.astro',
         Hero: './src/components/astro/starlight-overrides/Hero.astro',
-        Pagination: './src/components/astro/starlight-overrides/Pagination.astro'
+        Pagination:
+          './src/components/astro/starlight-overrides/Pagination.astro'
       },
 
       // https://starlight.astro.build/reference/configuration/#social
@@ -116,7 +117,7 @@ const baseConfig = {
         }
       ],
 
-      plugins: [starlightBlog()],
+      plugins: [starlightBlog()]
     }),
 
     tailwind({ applyBaseStyles: false })
@@ -125,16 +126,22 @@ const baseConfig = {
 
 //---//
 
-const base = `/${name}`;
+if (isGitHubPagesBuild) {
+  const base = `/${name}`;
 
-export default defineConfig(isGitHubPagesBuild
-  ? {
-      ...baseConfig,
-      site: isGitHubPagesPreview ? undefined : github_pages,
-      base,
-      // trailingSlash: 'always',
-      redirects: {
-        '/': base + '/en'
-      }
+  config = {
+    ...config,
+    site: isGitHubPagesPreview ? undefined : github_pages,
+    base,
+    redirects: {
+      '/': base + '/en'
     }
-  : baseConfig);
+  };
+}
+
+if (process.env.NODE_ENV !== 'production') {
+  config.output = 'hybrid';
+  config.integrations = [...config.integrations, react(), keystatic()];
+}
+
+export default defineConfig(config);
