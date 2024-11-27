@@ -1,7 +1,9 @@
 {
   "recommendations": [
+    "ms-azuretools.vscode-docker",
     "astro-build.astro-vscode",
     "unifiedjs.vscode-mdx",
+    "svelte.svelte-vscode",
     "bradlc.vscode-tailwindcss",
     "esbenp.prettier-vscode"
   ],
