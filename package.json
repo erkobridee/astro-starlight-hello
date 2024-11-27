@@ -28,7 +28,7 @@
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true run-s build preview"
   },
   "dependencies": {
-    "astro": "4.16.14",
+    "astro": "4.16.16",
     "svelte": "5.2.8"
   },
   "devDependencies": {
@@ -36,7 +36,7 @@
     "@astrojs/starlight": "0.29.0",
     "@astrojs/starlight-tailwind": "2.0.3",
     "@astrojs/svelte": "6.0.2",
-    "@astrojs/tailwind": "5.1.0",
+    "@astrojs/tailwind": "5.1.2",
     "@typescript-eslint/eslint-plugin": "8.16.0",
     "@typescript-eslint/parser": "8.16.0",
     "cross-env": "7.0.3",
