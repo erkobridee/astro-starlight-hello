@@ -170,5 +170,11 @@ docker stop nginx
 or
 
 ```sh
-npm run docker:stopd
+npm run docker:stop
 ```
+
+<!--
+docker rm $(docker ps -aq --filter name=nginx)
+
+docker rm $(docker ps -aq)
+-->
