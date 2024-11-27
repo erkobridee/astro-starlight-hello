@@ -82,3 +82,11 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
   - [[GitHub] wasp-lang/open-saas/opensaas-sh/blog](https://github.com/wasp-lang/open-saas/tree/main/opensaas-sh/blog)
 
 - [[GitHub] rebecamurillo/astro-blog-i18n-starter](https://github.com/rebecamurillo/astro-blog-i18n-starter) - Astro built starter project for a static website and blog witth multilingual i18n configuration.
+
+### Docker
+
+- [Build your Astro Site with Docker | Astro Docs](https://docs.astro.build/en/recipes/docker/)
+
+- [How to deploy your Astro static site with Nginx and Docker | Michaël Gainyo](https://michaelgainyo.github.io/blog/deploy-astro-build-static-site-with-docker-nginx/)
+
+- [How to Dockerize and Deploy Astro | DEV Community](https://dev.to/code42cate/how-to-dockerize-and-deploy-astro-6ll)
