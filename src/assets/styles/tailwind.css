@@ -14,9 +14,9 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
     :focus-visible {
       outline: solid 1px var(--custom-outline-color);
     }
-  }
 
-  :root[data-theme='light'] {
-    --custom-outline-color: theme(colors.accent.600);
+    &[data-theme='light'] {
+      --custom-outline-color: theme(colors.accent.600);
+    }
   }
 }

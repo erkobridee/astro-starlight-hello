@@ -5,7 +5,7 @@ import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
-import starlightBlog from 'starlight-blog'
+import starlightBlog from 'starlight-blog';
 
 //---//
 
@@ -73,15 +73,14 @@ const baseConfig = {
         }
       ],
 
-      customCss: [
-        './src/assets/styles/tailwind.css'
-      ],
+      customCss: ['./src/assets/styles/tailwind.css'],
 
       components: {
         LanguageSelect:
           './src/components/astro/starlight-overrides/LanguageSelect.astro',
         Hero: './src/components/astro/starlight-overrides/Hero.astro',
-        Pagination: './src/components/astro/starlight-overrides/Pagination.astro'
+        Pagination:
+          './src/components/astro/starlight-overrides/Pagination.astro'
       },
 
       // https://starlight.astro.build/reference/configuration/#social
@@ -116,10 +115,16 @@ const baseConfig = {
         }
       ],
 
-      plugins: [starlightBlog()],
+      plugins: [starlightBlog()]
     }),
 
-    tailwind({ applyBaseStyles: false })
+    tailwind({
+      applyBaseStyles: false,
+
+      // Allow writing nested CSS declarations
+      // alongside Tailwind's syntax
+      nesting: true
+    })
   ]
 };
 
@@ -127,14 +132,16 @@ const baseConfig = {
 
 const base = `/${name}`;
 
-export default defineConfig(isGitHubPagesBuild
-  ? {
-      ...baseConfig,
-      site: isGitHubPagesPreview ? undefined : github_pages,
-      base,
-      // trailingSlash: 'always',
-      redirects: {
-        '/': base + '/en'
+export default defineConfig(
+  isGitHubPagesBuild
+    ? {
+        ...baseConfig,
+        site: isGitHubPagesPreview ? undefined : github_pages,
+        base,
+        // trailingSlash: 'always',
+        redirects: {
+          '/': base + '/en'
+        }
       }
-    }
-  : baseConfig);
+    : baseConfig
+);

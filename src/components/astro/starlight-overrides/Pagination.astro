@@ -40,43 +40,41 @@ const isRtl = dir === 'rtl';
 
     border-top: 1px solid var(--sl-color-gray-6);
     padding-top: 1rem;
-  }
 
-  .pagination-links a {
-    text-decoration: none;
-  }
+    a {
+      text-decoration: none;
 
-  .pagination-links a div {
-    align-items: center;
-    color: var(--sl-color-gray-3);
-    display: flex;
-    font-size: var(--sl-text-sm);
-    gap: 0.15rem;
-  }
+      border: solid 1px var(--sl-color-gray-5);
 
-  .pagination-links a p {
-    color: var(--sl-color-gray-2);
-    font-weight: 600;
-    margin-inline: 0.25rem;
-  }
+      padding: 0.5rem;
+      border-radius: 0.5rem;
 
-  .pagination-links a {
-    border: solid 1px var(--sl-color-gray-5);
+      div {
+        align-items: center;
+        color: var(--sl-color-gray-3);
+        display: flex;
+        font-size: var(--sl-text-sm);
+        gap: 0.15rem;
+      }
 
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-  }
+      p {
+        color: var(--sl-color-gray-2);
+        font-weight: 600;
+        margin-inline: 0.25rem;
+      }
 
-  .pagination-links a:is(:hover, :focus-visible) {
-    border-color: var(--custom-outline-color);
-  }
+      &:is(:hover, :focus-visible) {
+        border-color: var(--custom-outline-color);
 
-  .pagination-links a:is(:hover, :focus-visible) div {
-    color: var(--custom-outline-color);
-  }
+        div {
+          color: var(--custom-outline-color);
+        }
 
-  .pagination-links a:is(:hover, :focus-visible) p {
-    color: var(--sl-color-white);
+        p {
+          color: var(--sl-color-white);
+        }
+      }
+    }
   }
 
   [rel='prev'] {
@@ -86,9 +84,9 @@ const isRtl = dir === 'rtl';
   [rel='next'] {
     margin-left: auto;
     text-align: end;
-  }
 
-  [rel='next'] div {
-    justify-content: flex-end;
+    div {
+      justify-content: flex-end;
+    }
   }
 </style>
