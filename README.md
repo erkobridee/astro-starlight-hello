@@ -90,3 +90,85 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 - [How to deploy your Astro static site with Nginx and Docker | Michaël Gainyo](https://michaelgainyo.github.io/blog/deploy-astro-build-static-site-with-docker-nginx/)
 
 - [How to Dockerize and Deploy Astro | DEV Community](https://dev.to/code42cate/how-to-dockerize-and-deploy-astro-6ll)
+
+#### Commands
+
+##### Build image
+
+- `docker build --no-cache -t <your-astro-image-name> .`
+
+```sh
+docker build --no-cache -t astro-starlight-hello .
+```
+
+or
+
+```sh
+npm run docker:build
+```
+
+- to check the container content
+
+```sh
+docker run -it astro-starlight-hello sh
+```
+
+or
+
+```sh
+npm run docker:check
+```
+
+##### Remove image
+
+- `docker rmi -f <your-astro-image-name>`
+
+```sh
+docker rmi -f astro-starlight-hello
+```
+
+or
+
+```sh
+npm run docker:rmi
+```
+
+##### Run
+
+- `docker run -p <local-port>:<container-port> <your-astro-image-name>`
+
+```sh
+docker run -p 8080:8080 astro-starlight-hello
+```
+
+or
+
+```sh
+npm run docker:run
+```
+
+###### detached mode
+
+- start `docker run --name <container-name> -d -p <local-port>:<container-port> <your-astro-image-name>`
+
+```sh
+docker run --name nginx -d -p 8080:8080 astro-starlight-hello
+```
+
+or
+
+```sh
+npm run docker:rund
+```
+
+- stop `docker stop <container-name>`
+
+```sh
+docker stop nginx
+```
+
+or
+
+```sh
+npm run docker:stopd
+```
