@@ -7,5 +7,5 @@
     "bradlc.vscode-tailwindcss",
     "esbenp.prettier-vscode"
   ],
-  "unwantedRecommendations": []
+  "unwantedRecommendations": ["GitHub.vscode-github-actions"]
 }
