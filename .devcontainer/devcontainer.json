@@ -21,7 +21,7 @@
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
-        "yzhang.markdown-all-in-one",
+        "TakumiI.markdowntable",
         "unifiedjs.vscode-mdx",
         "astro-build.astro-vscode",
         "svelte.svelte-vscode",
