@@ -10,6 +10,12 @@
       }
     },
     {
+      "files": "*.mdx",
+      "options": {
+        "parser": "markdown"
+      }
+    },
+    {
       "files": "*.astro",
       "options": {
         "parser": "astro"
