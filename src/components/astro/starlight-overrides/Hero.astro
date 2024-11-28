@@ -5,15 +5,24 @@ import Default from '@astrojs/starlight/components/Hero.astro';
 
 import { redefineUrl } from '~/utils/redefineUrl';
 
-const { data } = Astro.props.entry;
+const { hero } = Astro.props.entry.data;
+
+const shouldRender =
+  (hero && (hero as any).skip === true) || !/^\s*$/.test(hero?.title || '');
 
 // https://starlight.astro.build/reference/frontmatter/#heroconfig
-if (data.hero && data.hero?.actions && data.hero?.actions.length > 0) {
-  data.hero.actions = data.hero.actions.map(({ link, ...attrs }) => ({
-    ...attrs,
-    link: redefineUrl(link)
-  }));
+if (shouldRender && hero?.actions && hero?.actions.length > 0) {
+  hero.actions = hero.actions.map(
+    ({
+      // @ts-ignore
+      link,
+      ...attrs
+    }) => ({
+      ...attrs,
+      link: redefineUrl(link)
+    })
+  );
 }
 ---
 
-<Default {...Astro.props} />
+{shouldRender && <Default {...Astro.props} />}
