@@ -21,10 +21,11 @@
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
+        "yzhang.markdown-all-in-one",
+        "unifiedjs.vscode-mdx",
         "astro-build.astro-vscode",
         "svelte.svelte-vscode",
         "bradlc.vscode-tailwindcss",
-        "unifiedjs.vscode-mdx",
         "meganrogge.template-string-converter"
       ],
       "settings": {
