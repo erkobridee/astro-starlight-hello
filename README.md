@@ -1,6 +1,8 @@
 # Hello Astro Starlight
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+<!-- https://www.svgviewer.dev/svg-to-data-uri -->
+
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build) [![Astro](https://img.shields.io/badge/-astro-gray?style=flat&logo=astro)](https://astro.build/) [![Svelte](https://img.shields.io/badge/-svelte-gray?style=flat&logo=svelte)](https://svelte.dev/) [![Tailwind CSS](https://img.shields.io/badge/-tailwindcss-gray?style=flat&logo=tailwindcss)](https://tailwindcss.com/) [![Docker](https://img.shields.io/badge/-docker-gray?style=flat&logo=docker)](https://www.docker.com/) [![DevContainers](https://img.shields.io/badge/-devcontainers-gray?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNCIgc3R5bGU9ImZpbGw6IzE5M2U2MyIvPjxwb2x5Z29uIHBvaW50cz0iMTAuNzc3IDIyLjc0MiA5LjM0MyAyMS4zNDggMTIuNzI5IDE3Ljg2NSA5LjM0NiAxNC40MTcgMTAuNzc0IDEzLjAxNyAxNS41MjUgMTcuODU5IDEwLjc3NyAyMi43NDIiIHN0eWxlPSJmaWxsOiNhZGQxZWEiLz48cG9seWdvbiBwb2ludHM9IjIxLjQyIDE5LjEwMSAyMi44NTQgMTcuNzA2IDE5LjQ2OCAxNC4yMjQgMjIuODUxIDEwLjc3NiAyMS40MjMgOS4zNzYgMTYuNjcyIDE0LjIxOCAyMS40MiAxOS4xMDEiIHN0eWxlPSJmaWxsOiNhZGQxZWEiLz48L3N2Zz4=)](https://containers.dev/)
 
 ## Initial setup
 
@@ -24,6 +26,52 @@ All commands are run from the root of the project, from a terminal:
 | `npm run lint`            | Run the `prettier` and `eslint`                                                         |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`                                        |
 | `npm run astro -- --help` | Get help using the Astro CLI                                                            |
+
+### Docker Commands
+
+| Command                | Action                                                                |
+| :--------------------- | :-------------------------------------------------------------------- |
+| `npm run docker:build` | `docker build --no-cache -t astro-starlight-hello .`                  |
+| `npm run docker:check` | `docker run -it astro-starlight-hello sh`                             |
+| `npm run docker:rmi`   | `docker rmi -f astro-starlight-hello`                                 |
+| `npm run docker:run`   | `docker run -p 8080:8080 astro-starlight-hello`                       |
+| `npm run docker:rund`  | `docker run --name web-preview -d -p 8080:8080 astro-starlight-hello` |
+| `npm run docker:stopd` | `docker stop web-preview`                                             |
+| `npm run docker:rm`    | `docker rm $(docker ps -aq --filter name=web-preview)`                |
+| `npm run docker:stop`  | `run-s docker:stopd docker:rm`                                        |
+
+<!--
+docker rm $(docker ps -aq --filter name=nginx)
+
+docker rm $(docker ps -aq)
+-->
+
+## Local Development
+
+- [VS Code](https://code.visualstudio.com/) + [Development Containers](https://containers.dev/) ( [Customizations](https://containers.dev/supporting#visual-studio-code) | [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) )
+
+  - [[GitHub] erkobridee/devcontainer-hello](https://github.com/erkobridee/devcontainer-hello) - Learning about Development Containers
+
+## Test it online
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/erkobridee/astro-starlight-hello)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/erkobridee/astro-starlight-hello?devcontainer_path=.devcontainer/devcontainer.json)
+
+## Setup a new project using this repository
+
+You can use the `Use this template` button
+
+### degit
+
+```sh
+npx degit erkobridee/astro-starlight-hello {project_name}
+```
+
+### create a new project based on a GitHub repository’s main branch
+
+```sh
+npm create astro@latest -- --template erkobridee/astro-starlight-hello
+```
 
 ## 👀 Want to learn more?
 
@@ -90,91 +138,3 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 - [How to deploy your Astro static site with Nginx and Docker | Michaël Gainyo](https://michaelgainyo.github.io/blog/deploy-astro-build-static-site-with-docker-nginx/)
 
 - [How to Dockerize and Deploy Astro | DEV Community](https://dev.to/code42cate/how-to-dockerize-and-deploy-astro-6ll)
-
-#### Commands
-
-##### Build image
-
-- `docker build --no-cache -t <your-astro-image-name> .`
-
-```sh
-docker build --no-cache -t astro-starlight-hello .
-```
-
-or
-
-```sh
-npm run docker:build
-```
-
-- to check the container content
-
-```sh
-docker run -it astro-starlight-hello sh
-```
-
-or
-
-```sh
-npm run docker:check
-```
-
-##### Remove image
-
-- `docker rmi -f <your-astro-image-name>`
-
-```sh
-docker rmi -f astro-starlight-hello
-```
-
-or
-
-```sh
-npm run docker:rmi
-```
-
-##### Run
-
-- `docker run -p <local-port>:<container-port> <your-astro-image-name>`
-
-```sh
-docker run -p 8080:8080 astro-starlight-hello
-```
-
-or
-
-```sh
-npm run docker:run
-```
-
-###### detached mode
-
-- start `docker run --name <container-name> -d -p <local-port>:<container-port> <your-astro-image-name>`
-
-```sh
-docker run --name nginx -d -p 8080:8080 astro-starlight-hello
-```
-
-or
-
-```sh
-npm run docker:rund
-```
-
-- stop `docker stop <container-name>`
-
-```sh
-docker stop nginx
-```
-
-or
-
-```sh
-npm run docker:stop
-```
-
-<!--
-docker rm $(docker ps -aq --filter name=nginx)
-
-docker rm $(docker ps -aq)
--->
