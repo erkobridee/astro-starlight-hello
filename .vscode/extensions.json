@@ -1,11 +1,15 @@
 {
   "recommendations": [
-    "ms-azuretools.vscode-docker",
-    "astro-build.astro-vscode",
+    "ms-vscode-remote.remote-containers",
+    "EditorConfig.EditorConfig",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "yzhang.markdown-all-in-one",
     "unifiedjs.vscode-mdx",
+    "astro-build.astro-vscode",
     "svelte.svelte-vscode",
     "bradlc.vscode-tailwindcss",
-    "esbenp.prettier-vscode"
+    "meganrogge.template-string-converter"
   ],
   "unwantedRecommendations": ["GitHub.vscode-github-actions"]
 }
