@@ -2,7 +2,13 @@
 
 <!-- https://www.svgviewer.dev/svg-to-data-uri -->
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build) [![Astro](https://img.shields.io/badge/-astro-gray?style=flat&logo=astro)](https://astro.build/) [![Svelte](https://img.shields.io/badge/-svelte-gray?style=flat&logo=svelte)](https://svelte.dev/) [![Tailwind CSS](https://img.shields.io/badge/-tailwindcss-gray?style=flat&logo=tailwindcss)](https://tailwindcss.com/) [![Docker](https://img.shields.io/badge/-docker-gray?style=flat&logo=docker)](https://www.docker.com/) [![DevContainers](https://img.shields.io/badge/-devcontainers-gray?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNCIgc3R5bGU9ImZpbGw6IzE5M2U2MyIvPjxwb2x5Z29uIHBvaW50cz0iMTAuNzc3IDIyLjc0MiA5LjM0MyAyMS4zNDggMTIuNzI5IDE3Ljg2NSA5LjM0NiAxNC40MTcgMTAuNzc0IDEzLjAxNyAxNS41MjUgMTcuODU5IDEwLjc3NyAyMi43NDIiIHN0eWxlPSJmaWxsOiNhZGQxZWEiLz48cG9seWdvbiBwb2ludHM9IjIxLjQyIDE5LjEwMSAyMi44NTQgMTcuNzA2IDE5LjQ2OCAxNC4yMjQgMjIuODUxIDEwLjc3NiAyMS40MjMgOS4zNzYgMTYuNjcyIDE0LjIxOCAyMS40MiAxOS4xMDEiIHN0eWxlPSJmaWxsOiNhZGQxZWEiLz48L3N2Zz4=)](https://containers.dev/)
+[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+[![Astro](https://img.shields.io/badge/-astro-gray?style=flat&logo=astro)](https://astro.build/)
+[![Svelte](https://img.shields.io/badge/-svelte-gray?style=flat&logo=svelte)](https://svelte.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/-tailwindcss-gray?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/-typescript-gray?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Docker](https://img.shields.io/badge/-docker-gray?style=flat&logo=docker)](https://www.docker.com/)
+[![DevContainers](https://img.shields.io/badge/-devcontainers-gray?style=flat&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxNCIgc3R5bGU9ImZpbGw6IzE5M2U2MyIvPjxwb2x5Z29uIHBvaW50cz0iMTAuNzc3IDIyLjc0MiA5LjM0MyAyMS4zNDggMTIuNzI5IDE3Ljg2NSA5LjM0NiAxNC40MTcgMTAuNzc0IDEzLjAxNyAxNS41MjUgMTcuODU5IDEwLjc3NyAyMi43NDIiIHN0eWxlPSJmaWxsOiNhZGQxZWEiLz48cG9seWdvbiBwb2ludHM9IjIxLjQyIDE5LjEwMSAyMi44NTQgMTcuNzA2IDE5LjQ2OCAxNC4yMjQgMjIuODUxIDEwLjc3NiAyMS40MjMgOS4zNzYgMTYuNjcyIDE0LjIxOCAyMS40MiAxOS4xMDEiIHN0eWxlPSJmaWxsOiNhZGQxZWEiLz48L3N2Zz4=)](https://containers.dev/)
 
 ## Initial setup
 
