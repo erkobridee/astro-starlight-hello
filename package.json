@@ -45,7 +45,7 @@
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-svelte": "2.46.1",
     "globals": "15.13.0",
-    "is-ci": "3.0.1",
+    "is-ci": "4.1.0",
     "lint-staged": "15.2.10",
     "npm-run-all2": "7.0.1",
     "postcss": "8.4.49",
