@@ -5,13 +5,13 @@ import { blogSchema } from 'starlight-blog/schema';
 
 export const collections = {
   docs: defineCollection({
+    loader: docsLoader(),
     schema: docsSchema({
-      loader: docsLoader(),
       extend: (context) => blogSchema(context)
     })
   }),
   i18n: defineCollection({
-    loader: i18nLoader() /*type: 'data'*/,
+    loader: i18nLoader(),
     schema: i18nSchema()
   })
 };
