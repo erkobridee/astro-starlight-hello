@@ -16,7 +16,7 @@ const slugToIgnore = [
   ...supportedLocales.map((locale) => `${locale}/404`)
 ];
 
-const shouldRender = !slugToIgnore.includes(Astro.props.slug);
+const shouldRender = !slugToIgnore.includes(Astro.props.id);
 ---
 
 {shouldRender && <Default {...Astro.props} />}
