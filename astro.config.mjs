@@ -21,10 +21,6 @@ const isGitHubPagesPreview = !!process.env.GITHUB_PAGES_PREVIEW;
 // https://starlight.astro.build/guides/i18n/
 // https://starlight.astro.build/reference/configuration/
 const baseConfig = {
-  redirects: {
-    '/': '/en'
-  },
-
   integrations: [
     svelte({ extensions: ['.svelte'] }),
 
