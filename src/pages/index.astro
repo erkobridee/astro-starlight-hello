@@ -1,0 +1,26 @@
+---
+/*
+  current issue with tailwind css on the dev env
+
+  Styling disappears on second pageload in dev when using Tailwind #12754
+  https://github.com/withastro/astro/issues/12754
+ */
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+
+import config from 'virtual:starlight/user-config';
+
+const { defaultLocale } = config;
+
+const redirect = `/${defaultLocale.locale}`;
+---
+
+<StarlightPage
+  frontmatter={{
+    template: 'splash',
+    title: 'Redirecting...',
+    hero: { title: '' }
+  }}
+  isFallback
+/>
+
+<meta http-equiv="refresh" content={`0; url=${redirect}`} />
