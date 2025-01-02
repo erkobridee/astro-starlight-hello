@@ -3,7 +3,7 @@ FROM node:lts-alpine AS base
 WORKDIR /app
 COPY . .
 # install all dependencies
-RUN npm ci
+RUN CI=docker npm ci
 
 # ---- Build ----
 FROM base AS build
