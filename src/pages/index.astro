@@ -9,9 +9,11 @@ import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 
 import config from 'virtual:starlight/user-config';
 
+import { redefineUrl } from '~/utils/redefineUrl';
+
 const { defaultLocale } = config;
 
-const redirect = `/${defaultLocale.locale}`;
+const redirect = redefineUrl(`/${defaultLocale.locale}`);
 ---
 
 <StarlightPage
