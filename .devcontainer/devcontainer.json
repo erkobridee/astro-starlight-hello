@@ -26,6 +26,7 @@
         "astro-build.astro-vscode",
         "svelte.svelte-vscode",
         "bradlc.vscode-tailwindcss",
+        "csstools.postcss",
         "meganrogge.template-string-converter"
       ],
       "settings": {

@@ -117,7 +117,17 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 - [Overrides Reference | Reference - Starlight](https://starlight.astro.build/reference/overrides/)
 
-### Examples of customizations
+### View Transitions
+
+- [View transitions | Guides - Astro Docs](https://docs.astro.build/en/guides/view-transitions/)
+
+- [View Transitions Router API Reference | Runtime API - Astro Docs](https://docs.astro.build/en/reference/modules/astro-transitions/)
+
+- [Guide: Add View Transitions to Starlight | Bag of Tricks](https://events-3bg.pages.dev/jotter/starlight/guide/)
+
+  - [[GitHub] martrapp/astro-vtbot](https://github.com/martrapp/astro-vtbot) - The 👜 Bag of Tricks ✨ for Astro's View Transitions. ⭐️ Please star to support this work!
+
+### Examples of Customizations
 
 - [[GitHub] kinde-oss/documentation](https://github.com/kinde-oss/documentation)
 
