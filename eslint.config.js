@@ -24,7 +24,7 @@ export default [
 
   ...eslintPluginSvelte.configs['flat/recommended'],
   {
-    files: [' src/**/*.svelte'],
+    files: ['src/**/*.svelte'],
 
     languageOptions: {
       globals: {
@@ -37,6 +37,16 @@ export default [
 
         // Parse the `<script>` in `.svelte` as TypeScript by adding the following configuration.
         parser: '@typescript-eslint/parser'
+      }
+    }
+  },
+
+  {
+    files: ['**/*.mjs'],
+
+    languageOptions: {
+      globals: {
+        ...globals.node
       }
     }
   },
