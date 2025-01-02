@@ -1,0 +1,28 @@
+.post-footer {
+  .pagination {
+    border-top: 1px solid var(--sl-color-gray-6);
+    padding-top: 1rem;
+
+    .sl-link-card {
+      border-color: var(--sl-color-gray-5);
+      align-items: center;
+
+      a .title {
+        color: var(--sl-color-gray-2);
+        font-size: var(--sl-text-base);
+      }
+
+      &:is(:hover, :focus-visible) {
+        border-color: var(--custom-outline-color);
+
+        a .title {
+          color: var(--sl-color-white);
+        }
+
+        svg {
+          color: var(--custom-outline-color);
+        }
+      }
+    }
+  }
+}
