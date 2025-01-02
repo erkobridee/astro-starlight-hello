@@ -6,10 +6,12 @@ import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
 import tailwind from '@astrojs/tailwind';
 import starlightBlog from 'starlight-blog';
+import compress from '@playform/compress';
 
 //---//
 
-import packageJSON from './package.json' assert { type: 'json' };
+// https://github.com/eslint/eslint/discussions/15305
+import packageJSON from './package.json' with { type: 'json' };
 
 const { name, github_pages } = packageJSON;
 const isGitHubPagesBuild = !!process.env.GITHUB_PAGES;
@@ -120,7 +122,9 @@ const baseConfig = {
       // Allow writing nested CSS declarations
       // alongside Tailwind's syntax
       nesting: true
-    })
+    }),
+
+    compress()
   ]
 };
 
@@ -133,11 +137,7 @@ export default defineConfig(
     ? {
         ...baseConfig,
         site: isGitHubPagesPreview ? undefined : github_pages,
-        base,
-        // trailingSlash: 'always',
-        redirects: {
-          '/': base + '/en'
-        }
+        base
       }
     : baseConfig
 );
