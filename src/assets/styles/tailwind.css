@@ -19,4 +19,14 @@ https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
       --custom-outline-color: theme(colors.accent.600);
     }
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    @view-transition {
+      navigation: auto;
+    }
+  }
+}
+
+@layer components {
+  @nested-import './starlight-blog.css';
 }

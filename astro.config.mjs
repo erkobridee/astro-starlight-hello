@@ -71,10 +71,7 @@ const baseConfig = {
         }
       ],
 
-      customCss: [
-        './src/assets/styles/starlight-blog.css',
-        './src/assets/styles/tailwind.css'
-      ],
+      customCss: ['./src/assets/styles/tailwind.css'],
 
       components: {
         LanguageSelect:
