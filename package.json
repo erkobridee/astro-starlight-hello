@@ -55,7 +55,7 @@
     "prettier": "3.4.2",
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-svelte": "3.3.3",
-    "prettier-plugin-tailwindcss": "0.6.9",
+    "prettier-plugin-tailwindcss": "0.6.10",
     "sharp": "0.33.5",
     "simple-git-hooks": "2.11.1",
     "starlight-blog": "0.16.1",
