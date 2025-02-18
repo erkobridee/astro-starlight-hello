@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 import starlightPlugin from '@astrojs/starlight-tailwind';
 
 // useful tools to generate colors palettes
@@ -31,8 +33,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif']
-        // serif: ['serif']
+        sans: ['Poppins', ...defaultTheme.fontFamily.sans]
       },
       colors: { accent, gray },
       outlineColor: accent,
