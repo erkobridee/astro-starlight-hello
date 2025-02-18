@@ -4,9 +4,10 @@
 import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
-import tailwind from '@astrojs/tailwind';
 import starlightBlog from 'starlight-blog';
 import compress from '@playform/compress';
+
+import tailwindcss from '@tailwindcss/vite';
 
 //---//
 
@@ -71,7 +72,7 @@ const baseConfig = {
         }
       ],
 
-      customCss: ['./src/assets/styles/tailwind.css'],
+      customCss: ['./src/assets/styles/global.css'],
 
       components: {
         LanguageSelect:
@@ -117,16 +118,11 @@ const baseConfig = {
       plugins: [starlightBlog()]
     }),
 
-    tailwind({
-      applyBaseStyles: false,
-
-      // Allow writing nested CSS declarations
-      // alongside Tailwind's syntax
-      nesting: true
-    }),
-
     compress()
-  ]
+  ],
+  vite: {
+    plugins: [tailwindcss()]
+  }
 };
 
 //---//
