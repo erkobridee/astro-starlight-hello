@@ -1,10 +1,11 @@
+/*
 :root {
   --custom-outline-color: var(--color-accent-200);
 
   --sl-font: var(--font-sans);
   --sl-font-mono: var(--font-mono);
 
-  /* Dark mode Starlight theme variables */
+  / * Dark mode Starlight theme variables * /
   --sl-color-white: white;
 
   --sl-color-gray-1: var(--color-gray-200);
@@ -27,7 +28,7 @@
   &[data-theme='light'] {
     --custom-outline-color: var(--color-accent-600);
 
-    /* Light mode Starlight theme variables */
+    / * Light mode Starlight theme variables * /
     --sl-color-white: var(--color-gray-900);
 
     --sl-color-gray-1: var(--color-gray-800);
@@ -45,6 +46,13 @@
     --sl-color-accent-high: var(--color-accent-900);
   }
 }
+*/
+
+@plugin '~/utils/starlightTailwindPlugin';
+
+/* Starlight uses a `data-theme` attribute to power its dark mode. */
+/* https://tailwindcss.com/docs/dark-mode#using-a-data-attribute */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @media (prefers-reduced-motion: no-preference) {
   @view-transition {
