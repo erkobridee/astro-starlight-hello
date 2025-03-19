@@ -12,7 +12,10 @@ import tailwindcss from '@tailwindcss/vite';
 //---//
 
 // https://github.com/eslint/eslint/discussions/15305
-import packageJSON from './package.json' with { type: 'json' };
+import { readFileSync } from 'fs';
+const packageJSON = JSON.parse(
+  readFileSync('./package.json', { encoding: 'utf-8' })
+);
 
 const { name, github_pages } = packageJSON;
 const isGitHubPagesBuild = !!process.env.GITHUB_PAGES;
