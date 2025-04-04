@@ -35,7 +35,7 @@
     "@astrojs/check": "0.9.4",
     "@astrojs/starlight": "0.32.5",
     "@astrojs/svelte": "7.0.8",
-    "@playform/compress": "0.1.7",
+    "@playform/compress": "0.1.9",
     "@tailwindcss/vite": "4.0.17",
     "@typescript-eslint/eslint-plugin": "8.28.0",
     "@typescript-eslint/parser": "8.28.0",
