@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
-    "@astrojs/starlight": "0.32.5",
+    "@astrojs/starlight": "0.32.6",
     "@astrojs/svelte": "7.0.9",
     "@playform/compress": "0.1.9",
     "@tailwindcss/vite": "4.1.3",
