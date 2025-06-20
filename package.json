@@ -28,7 +28,7 @@
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true run-s build preview"
   },
   "dependencies": {
-    "astro": "5.9.4",
+    "astro": "5.10.0",
     "svelte": "5.34.7"
   },
   "devDependencies": {
