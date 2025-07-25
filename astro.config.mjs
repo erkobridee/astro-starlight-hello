@@ -1,7 +1,5 @@
-// @ts-check
-// import type { AstroUserConfig } from ' astro/config';
-
 import { defineConfig } from 'astro/config';
+
 import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
@@ -26,6 +24,7 @@ const isGitHubPagesPreview = !!process.env.GITHUB_PAGES_PREVIEW;
 // https://astro.build/config
 // https://starlight.astro.build/guides/i18n/
 // https://starlight.astro.build/reference/configuration/
+/** @type {import('astro').AstroUserConfig} */
 const baseConfig = {
   integrations: [
     svelte({ extensions: ['.svelte'] }),
