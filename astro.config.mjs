@@ -3,7 +3,6 @@ import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
-import compress from '@playform/compress';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -122,9 +121,7 @@ const baseConfig = {
       ],
 
       plugins: [starlightBlog()]
-    }),
-
-    compress()
+    })
   ],
   vite: {
     plugins: [tailwindcss()]
