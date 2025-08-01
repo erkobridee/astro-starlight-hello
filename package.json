@@ -58,7 +58,7 @@
     "simple-git-hooks": "2.13.1",
     "starlight-blog": "0.24.0",
     "tailwindcss": "4.1.11",
-    "typescript": "5.8.3"
+    "typescript": "5.9.2"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,md,mdx,json,astro,svelte}": "prettier --write",
