@@ -36,7 +36,7 @@
     "@astrojs/starlight": "0.35.2",
     "@astrojs/svelte": "7.1.0",
     "@astrojs/ts-plugin": "1.10.4",
-    "@tailwindcss/vite": "4.1.11",
+    "@tailwindcss/vite": "4.1.12",
     "@typescript-eslint/eslint-plugin": "8.39.1",
     "@typescript-eslint/parser": "8.39.1",
     "astro-vtbot": "2.1.7",
@@ -57,7 +57,7 @@
     "sharp": "0.34.3",
     "simple-git-hooks": "2.13.1",
     "starlight-blog": "0.24.0",
-    "tailwindcss": "4.1.11",
+    "tailwindcss": "4.1.12",
     "typescript": "5.9.2"
   },
   "lint-staged": {
