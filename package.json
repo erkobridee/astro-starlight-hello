@@ -28,13 +28,13 @@
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true run-s build preview"
   },
   "dependencies": {
-    "astro": "5.13.5",
+    "astro": "5.13.7",
     "svelte": "5.38.7"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "@astrojs/starlight": "0.35.2",
-    "@astrojs/svelte": "7.1.0",
+    "@astrojs/svelte": "7.1.1",
     "@astrojs/ts-plugin": "1.10.4",
     "@tailwindcss/vite": "4.1.13",
     "@typescript-eslint/eslint-plugin": "8.42.0",
