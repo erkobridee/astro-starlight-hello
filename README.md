@@ -1,4 +1,4 @@
-# Hello Astro Starlight
+# Hello Astro Starlight [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/erkobridee/astro-starlight-hello)
 
 <!-- https://www.svgviewer.dev/svg-to-data-uri -->
 
@@ -55,7 +55,6 @@ docker rm $(docker ps -aq)
 ## Local Development
 
 - [VS Code](https://code.visualstudio.com/) + [Development Containers](https://containers.dev/) ( [Customizations](https://containers.dev/supporting#visual-studio-code) | [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) )
-
   - [[GitHub] erkobridee/devcontainer-hello](https://github.com/erkobridee/devcontainer-hello) - Learning about Development Containers
 
 ## Test it online
@@ -94,13 +93,11 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 - [Custom 404 page - Customizing Starlight | Guides - Starlight](https://starlight.astro.build/guides/customization/#custom-404-page)
 
 - [Custom fonts - Customizing Starlight | Guides - Starlight](https://starlight.astro.build/guides/customization/#custom-fonts)
-
   - [Poppins | Fontsource](https://fontsource.org/fonts/poppins)
 
   - [Poppins | Google Fonts](https://fonts.google.com/specimen/Poppins)
 
 - [CSS & Styling | Guides - Starlight](https://starlight.astro.build/guides/css-and-tailwind/#color-theme-editor)
-
   - Contrast level: `AAA`
 
   - Accent [ Hue: `139`, Chroma: `0.27` ]
@@ -124,7 +121,6 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 - [View Transitions Router API Reference | Runtime API - Astro Docs](https://docs.astro.build/en/reference/modules/astro-transitions/)
 
 - [Guide: Add View Transitions to Starlight | Bag of Tricks](https://events-3bg.pages.dev/jotter/starlight/guide/)
-
   - [[GitHub] martrapp/astro-vtbot](https://github.com/martrapp/astro-vtbot) - The 👜 Bag of Tricks ✨ for Astro's View Transitions. ⭐️ Please star to support this work!
 
 ### Examples of Customizations
@@ -142,7 +138,6 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 ### Examples of Blog
 
 - [[GitHub] HiDeoo/starlight-blog](https://github.com/HiDeoo/starlight-blog) - Starlight plugin to add a blog to your documentation
-
   - [[GitHub] wasp-lang/open-saas/opensaas-sh/blog](https://github.com/wasp-lang/open-saas/tree/main/opensaas-sh/blog)
 
 - [[GitHub] rebecamurillo/astro-blog-i18n-starter](https://github.com/rebecamurillo/astro-blog-i18n-starter) - Astro built starter project for a static website and blog witth multilingual i18n configuration.
