@@ -39,7 +39,7 @@
     "@tailwindcss/vite": "4.1.14",
     "@typescript-eslint/eslint-plugin": "8.46.1",
     "@typescript-eslint/parser": "8.46.1",
-    "astro-vtbot": "2.1.8",
+    "astro-vtbot": "2.1.9",
     "cross-env": "10.1.0",
     "eslint": "9.37.0",
     "eslint-plugin-astro": "1.3.1",
