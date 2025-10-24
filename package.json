@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "astro": "5.15.1",
-    "svelte": "5.41.2"
+    "svelte": "5.41.3"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.5",
