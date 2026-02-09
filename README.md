@@ -84,6 +84,8 @@ Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro 
 
 ## References
 
+- [[GitHub] trueberryless-org/awesome-starlight](https://github.com/trueberryless-org/awesome-starlight) - Awesome List of Starlight plugins, tools, content and showcase sites updated weekly with AI.
+
 - [@astrojs/svelte | Astro Docs](https://docs.astro.build/en/guides/integrations-guide/svelte/)
 
 - [Internationalization (i18n) | Guides - Starlight](https://starlight.astro.build/guides/i18n/)
