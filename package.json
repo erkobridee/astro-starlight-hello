@@ -55,7 +55,7 @@
     "prettier-plugin-tailwindcss": "0.8.0",
     "sharp": "0.34.5",
     "simple-git-hooks": "2.13.1",
-    "starlight-blog": "0.25.3",
+    "starlight-blog": "0.26.1",
     "tailwindcss": "4.2.4",
     "typescript": "5.9.3"
   },
