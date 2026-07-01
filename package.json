@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
-    "@astrojs/starlight": "0.37.7",
+    "@astrojs/starlight": "0.41.2",
     "@astrojs/svelte": "7.2.5",
     "@astrojs/ts-plugin": "1.10.9",
     "@tailwindcss/vite": "4.3.2",
