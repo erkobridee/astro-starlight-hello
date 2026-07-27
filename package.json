@@ -32,7 +32,7 @@
     "svelte": "5.56.8"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.9",
+    "@astrojs/check": "0.9.10",
     "@astrojs/starlight": "0.37.7",
     "@astrojs/svelte": "7.2.5",
     "@astrojs/ts-plugin": "1.10.10",
