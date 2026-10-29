@@ -25,17 +25,18 @@
     "docker:stopd": "docker stop web-preview",
     "docker:rm": "docker rm $(docker ps -aq --filter name=web-preview)",
     "docker:stop": "run-s docker:stopd docker:rm",
-    "gh-pages-build": "cross-env GITHUB_PAGES=true npm run build",
+    "gh-pages-build": "cross-env GITHUB_PAGES=true pnpm build",
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true run-s build preview"
   },
   "dependencies": {
-    "astro": "5.18.2",
+    "astro": "7.4.4",
     "svelte": "5.57.3"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
-    "@astrojs/starlight": "0.37.7",
-    "@astrojs/svelte": "7.2.5",
+    "@astrojs/sitemap": "3.7.4",
+    "@astrojs/starlight": "0.42.7",
+    "@astrojs/svelte": "9.1.2",
     "@astrojs/ts-plugin": "1.10.12",
     "@eslint/js": "10.0.1",
     "@tailwindcss/vite": "4.3.3",
@@ -57,9 +58,9 @@
     "prettier-plugin-tailwindcss": "0.8.1",
     "sharp": "0.35.5",
     "simple-git-hooks": "2.14.0",
-    "starlight-blog": "0.25.3",
+    "starlight-blog": "0.30.2",
     "tailwindcss": "4.3.3",
-    "typescript": "5.9.3"
+    "typescript": "6.0.3"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,md,mdx,json,astro,svelte}": "prettier --write",
