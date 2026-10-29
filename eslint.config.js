@@ -16,15 +16,18 @@ import svelteConfig from './svelte.config.js';
 
 //---///
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   js.configs.recommended,
 
   ...eslintPluginAstro.configs.recommended,
   ...eslintPluginAstro.configs['jsx-a11y-strict'],
 
-  ...eslintPluginSvelte.configs['flat/recommended'],
+  // https://sveltejs.github.io/eslint-plugin-svelte/user-guide/
+  ...eslintPluginSvelte.configs.recommended,
+
   {
-    files: [' src/**/*.svelte'],
+    files: ['src/**/*.svelte'],
 
     languageOptions: {
       globals: {
@@ -37,6 +40,16 @@ export default [
 
         // Parse the `<script>` in `.svelte` as TypeScript by adding the following configuration.
         parser: '@typescript-eslint/parser'
+      }
+    }
+  },
+
+  {
+    files: ['**/*.mjs'],
+
+    languageOptions: {
+      globals: {
+        ...globals.node
       }
     }
   },

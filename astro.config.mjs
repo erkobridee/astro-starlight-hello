@@ -1,15 +1,18 @@
-// @ts-check
-// import type { AstroUserConfig } from ' astro/config';
-
 import { defineConfig } from 'astro/config';
+
 import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
-import tailwind from '@astrojs/tailwind';
 import starlightBlog from 'starlight-blog';
+
+import tailwindcss from '@tailwindcss/vite';
 
 //---//
 
-import packageJSON from './package.json' assert { type: 'json' };
+// https://github.com/eslint/eslint/discussions/15305
+import { readFileSync } from 'fs';
+const packageJSON = JSON.parse(
+  readFileSync('./package.json', { encoding: 'utf-8' })
+);
 
 const { name, github_pages } = packageJSON;
 const isGitHubPagesBuild = !!process.env.GITHUB_PAGES;
@@ -20,11 +23,8 @@ const isGitHubPagesPreview = !!process.env.GITHUB_PAGES_PREVIEW;
 // https://astro.build/config
 // https://starlight.astro.build/guides/i18n/
 // https://starlight.astro.build/reference/configuration/
+/** @type {import('astro').AstroUserConfig} */
 const baseConfig = {
-  redirects: {
-    '/': '/en'
-  },
-
   integrations: [
     svelte({ extensions: ['.svelte'] }),
 
@@ -73,20 +73,25 @@ const baseConfig = {
         }
       ],
 
-      customCss: ['./src/assets/styles/tailwind.css'],
+      customCss: ['./src/assets/styles/global.css'],
 
       components: {
         LanguageSelect:
           './src/components/astro/starlight-overrides/LanguageSelect.astro',
+        Head: './src/components/astro/starlight-overrides/Head.astro',
         Hero: './src/components/astro/starlight-overrides/Hero.astro',
         Pagination:
           './src/components/astro/starlight-overrides/Pagination.astro'
       },
 
       // https://starlight.astro.build/reference/configuration/#social
-      social: {
-        github: 'https://github.com/erkobridee/astro-starlight-hello'
-      },
+      social: [
+        {
+          icon: 'github',
+          label: 'GitHub',
+          href: 'https://github.com/erkobridee/astro-starlight-hello'
+        }
+      ],
 
       // https://starlight.astro.build/reference/configuration/#head
       // https://fonts.google.com/specimen/Poppins
@@ -116,16 +121,11 @@ const baseConfig = {
       ],
 
       plugins: [starlightBlog()]
-    }),
-
-    tailwind({
-      applyBaseStyles: false,
-
-      // Allow writing nested CSS declarations
-      // alongside Tailwind's syntax
-      nesting: true
     })
-  ]
+  ],
+  vite: {
+    plugins: [tailwindcss()]
+  }
 };
 
 //---//
@@ -137,11 +137,7 @@ export default defineConfig(
     ? {
         ...baseConfig,
         site: isGitHubPagesPreview ? undefined : github_pages,
-        base,
-        // trailingSlash: 'always',
-        redirects: {
-          '/': base + '/en'
-        }
+        base
       }
     : baseConfig
 );
