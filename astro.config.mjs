@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
+import sitemap from '@astrojs/sitemap';
 
 import tailwindcss from '@tailwindcss/vite';
 
@@ -121,7 +122,10 @@ const baseConfig = {
       ],
 
       plugins: [starlightBlog()]
-    })
+    }),
+
+    // https://docs.astro.build/en/guides/integrations-guide/sitemap/
+    sitemap()
   ],
   vite: {
     plugins: [tailwindcss()]
