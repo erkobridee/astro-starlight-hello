@@ -31,8 +31,8 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      #- name: Run TypeScript check
-      #  run: pnpm tsc
+      - name: Run TypeScript check
+        run: pnpm tsc
 
       - name: Run lint check
         run: pnpm lint
