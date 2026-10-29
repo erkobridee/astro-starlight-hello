@@ -69,7 +69,7 @@ const baseConfig = {
           translations: {
             'pt-BR': 'Referências'
           },
-          autogenerate: { directory: 'reference' }
+          items: [{ autogenerate: { directory: 'reference' } }]
         }
       ],
 
