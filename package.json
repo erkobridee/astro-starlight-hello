@@ -25,7 +25,7 @@
     "docker:stopd": "docker stop web-preview",
     "docker:rm": "docker rm $(docker ps -aq --filter name=web-preview)",
     "docker:stop": "run-s docker:stopd docker:rm",
-    "gh-pages-build": "cross-env GITHUB_PAGES=true npm run build",
+    "gh-pages-build": "cross-env GITHUB_PAGES=true pnpm build",
     "gh-pages-preview": "cross-env GITHUB_PAGES=true GITHUB_PAGES_PREVIEW=true run-s build preview"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.12",
+    "@astrojs/sitemap": "3.7.4",
     "@astrojs/starlight": "0.42.7",
     "@astrojs/svelte": "9.1.2",
     "@astrojs/ts-plugin": "1.10.12",
