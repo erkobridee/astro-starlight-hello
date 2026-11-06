@@ -2,5 +2,5 @@ allowBuilds:
   esbuild: true
   sharp: true
   simple-git-hooks: true
-minimumReleaseAgeExclude:
-  - astro@7.4.4
+overrides:
+  '@emnapi/runtime': '1.11.3'
