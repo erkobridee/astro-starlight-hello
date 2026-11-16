@@ -51,7 +51,7 @@
     "is-ci": "4.1.0",
     "lint-staged": "17.6.0",
     "npm-run-all2": "9.0.4",
-    "postcss": "8.5.32",
+    "postcss": "8.5.33",
     "prettier": "3.10.1",
     "prettier-plugin-astro": "1.1.2",
     "prettier-plugin-svelte": "4.1.1",
